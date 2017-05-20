@@ -1,0 +1,22 @@
+body .whole-page {
+  width: 800px;
+}
+body .theme {
+  height: 70px;
+}
+body .message {
+  display: inline-block;
+}
+body .image {
+  background-color: #3E606F;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+body .date {
+  background-color: #23363e;
+}
+body .sender {
+  background-color: #99b8c6;
+}
