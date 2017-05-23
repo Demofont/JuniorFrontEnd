@@ -3,14 +3,18 @@
 @main-color-light: lighten(@main-color,35%);
 
 body{
+    background-color: @main-color-dark;
     .whole-page{
          width: 800px;
     }
     .theme{
         height: 70px;
     }
-    .message{
+    .display-inline{
         display: inline-block;
+    }
+    .right-side{
+        width: calc(100% - 86px);
     }
 .image{
 background-color:@main-color;
@@ -22,7 +26,7 @@ border-radius: 40px;
 .date{
 background-color:@main-color-dark;
 }
-.sender{
+.note{
 background-color:@main-color-light;
 }
 }

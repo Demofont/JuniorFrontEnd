@@ -1,11 +1,17 @@
+body {
+  background-color: #23363e;
+}
 body .whole-page {
   width: 800px;
 }
 body .theme {
   height: 70px;
 }
-body .message {
+body .display-inline {
   display: inline-block;
+}
+body .right-side {
+  width: calc(14%);
 }
 body .image {
   background-color: #3E606F;
@@ -17,6 +23,6 @@ body .image {
 body .date {
   background-color: #23363e;
 }
-body .sender {
+body .note {
   background-color: #99b8c6;
 }
