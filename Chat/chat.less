@@ -1,32 +1,89 @@
 @main-color: #3E606F;
-@main-color-dark: darken(@main-color,15%);
-@main-color-light: lighten(@main-color,35%);
+@main-color-dark: #193441;
+@main-color-light: #91AA9D;
+@main-colot-text: #D1DBBD;
+span{
+font-family: serif;
+font-size: 8x;
+color: @main-colot-text;
+}
 
 body{
+    width: 800px;
     background-color: @main-color-dark;
-    .whole-page{
-         width: 800px;
-    }
-    .theme{
+    .header{
+        background-color:@main-color-light;
+        display: flex;
+        justify-content: space-between;
         height: 70px;
+        border: 1px solid black;
+        border-radius: 10px;
+        .close{
+            width: 25px;
+            height: 25px;
+            margin-top: 8px;
+            margin-right: 8px;
+        }
+        .info{
+            margin-top : 4px;
+            margin-left : 8px;
+            .theme{
+                font-size: 35px;
+                margin-bottom: 8px;
+            }
+            .creator-info{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
     }
-    .display-inline{
-        display: inline-block;
+    .post{
+        padding: 8px;
+        display: flex;
+        align-content: center;
+    }
+    .left-side{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        border-right: 1px solid black;
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:@main-color-light;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 40px;
+    font-weight: bold;
+    }
+.date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    }
     }
     .right-side{
-        width: calc(100% - 86px);
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    .author{
+        margin-left: 15px;
+        margin-bottom: 5px;
     }
-.image{
-background-color:@main-color;
-width: 80px;
-height: 80px;
-border: 1px solid black;
-border-radius: 40px;
-}
-.date{
-background-color:@main-color-dark;
-}
-.note{
-background-color:@main-color-light;
-}
-}
+.letter{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:@main-color;
+    padding: 8px;
+                }
+            }
+    }
