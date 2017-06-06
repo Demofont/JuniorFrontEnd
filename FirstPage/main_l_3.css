@@ -1,0 +1,21 @@
+.main-container{
+    width: 500px;
+}
+.display-inline {
+    display: inline-block;
+}
+.left-part{
+    padding-left: 100px;
+}
+.right-line{
+
+}
+.image {
+    width: 80px;
+    height: 80px;
+    border: 1px solid silver;
+    border-radius: 40px;
+}
+.first-line{
+    font-weight: bold;
+}
