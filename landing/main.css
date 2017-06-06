@@ -7,9 +7,9 @@ body {
   position: absolute;
 }
 .join-us-container {
-  height: 110ex;
+  height: 100pc;
   margin-top: -70px;
-  background: url(img/14.png);
+  background: url(img/141.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -20,11 +20,11 @@ body {
   padding-left: 150px;
 }
 .join-us-container .join-us-content .join-us-content-first-block {
-  background-color: #999999;
+  background-color: #EEE;
   font-size: 52px;
   text-align: center;
   color: #ff7d65;
-  opacity: 0.4;
+  opacity: 0.6;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 82px;
