@@ -4,6 +4,7 @@
 @border-radius-small: 8px;
 @nav-button-size: 48px;
 
+@gray-line:#f2f2f2;
 @light-gray: #999999;
 @text-color-bright: #EEE;
 @dark-grey: #303030;
@@ -19,6 +20,32 @@
 .border-radius-common(@value) {
     border-top-left-radius: @value;
     border-bottom-right-radius: @value;
+}
+
+.midle-line{
+    margin-top: 10px;
+    height: 3px;
+    background: @gray-line;
+    display: flex;
+    justify-content: space-around;
+        .midle-line-three-color-container{
+            display: flex;
+                .midle-line-first-color{
+                    height: 3px;
+                    width: 36px;
+                    background-color: @main-red;
+                }
+                .midle-line-second-color{
+                    height: 3px;
+                    width: 36px;
+                    background-color: @main-orange;
+                }
+                .midle-line-third-color{
+                    height: 3px;
+                    width: 36px;
+                    background-color: @main-green;
+                }
+        }
 }
 
 body {
@@ -148,10 +175,6 @@ body {
     .latest-courses-container {
         display: flex;
         justify-content: space-between;
-
-        // .latest-course-item-image{
-        //     justify-content: center; 
-        //     background-size: contain;
         }
 
         .latest-course-item-first {
@@ -160,16 +183,12 @@ body {
             border: 1px solid black;
             width: 290px;
             height: 368px;
-
                    .latest-course-item-image-first{
-                    //    background-image:url('img/01.jpg');
-                       height: 220px;
-                       width: 220px;
-            // justify-content: center; 
-            // background-size: contain;
+                    background-image: url("img/01.jpg");
+                    background-size: cover;
+                    background-position-x: center;
+                    height: 220px;
         }
-
-
             .latest-course-item-title {
                 background-color: @dark-grey;
                 color:@text-color-bright;
@@ -213,8 +232,12 @@ body {
             border: 1px solid black;
             width: 290px;
             height: 368px;
-
-
+                .latest-course-item-image-second{
+                    background-image: url("img/02.jpg");
+                    background-size: cover;
+                    background-position-x: center;
+                    height: 220px;
+        }
             .latest-course-item-title {
                 background-color: @dark-grey;
                 color:@text-color-bright;
@@ -258,6 +281,12 @@ body {
             border: 1px solid black;
             width: 290px;
             height: 368px;
+                      .latest-course-item-image-third{
+                background-image: url("img/03.jpg");
+                background-size: cover;
+                background-position-x: center;
+                height: 220px;
+        }
 
 
             .latest-course-item-title {
@@ -298,4 +327,17 @@ body {
             }
         }
     }    
+
+.our-services{
+    width: @content-width;
+    display:flex;
+    flex-direction: row;
+    .our-services-icons-container{
+        .our-services-icon{
+                 color:@main-green;
+        }
+    }
+    .our-services-disc{
+            color:@main-red;
+    }
 }
